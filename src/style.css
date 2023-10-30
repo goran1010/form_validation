@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: beige;
+}
+form {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 0 10px black;
+  border-radius: 5px;
+}
+legend {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+legend > span {
+  font-weight: bold;
+}
+label {
+  font-weight: bold;
+  user-select: none;
+}
+.center {
+  display: flex;
+  gap: 1rem;
+}
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.left > div,
+.right > div {
+  display: flex;
+  justify-content: space-between;
+}
+div.country > div,
+div.password > div {
+  display: flex;
+  gap: 1rem;
+}
+div.email {
+  justify-content: end;
+}
+div.button,
+div.email {
+  display: flex;
+  justify-content: center;
+}
+button {
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: aquamarine;
+  user-select: none;
+  cursor: pointer;
+}
