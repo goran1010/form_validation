@@ -7,6 +7,7 @@ input {
   outline: none;
   border-radius: 5px;
   border: 2px solid black;
+  padding: 1px 2px;
 }
 body {
   display: flex;
@@ -71,6 +72,9 @@ button {
   user-select: none;
   cursor: pointer;
 }
+button:active {
+  background-color: rgb(74, 207, 163);
+}
 *:invalid {
   border-color: red;
 }
@@ -78,5 +82,19 @@ button {
   border-color: green;
 }
 .not-required {
+  border-color: gray;
+}
+.required {
   border-color: orange;
+}
+@media (max-width: 700px) {
+  .center {
+    flex-direction: column;
+  }
+  div.email {
+    justify-content: space-between;
+  }
+  form {
+    margin: 0.5rem;
+  }
 }
