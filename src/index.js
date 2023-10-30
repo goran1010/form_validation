@@ -1,4 +1,7 @@
 import "./style.css";
+import "./images/png-transparent-computer-icons-form-website-development-favicon-paper-logo-text-rectangle-form.png";
+import "./fonts/Roboto-Regular.ttf";
+
 import passwordMatch from "./passwordMatch.js";
 import validatePassword from "./validatePassword.js";
 import validateEmail from "./validateEmail.js";
