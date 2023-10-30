@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+input {
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid black;
+}
 body {
   display: flex;
   justify-content: center;
@@ -28,7 +33,6 @@ legend > span {
 }
 label {
   font-weight: bold;
-  user-select: none;
 }
 .center {
   display: flex;
@@ -66,4 +70,13 @@ button {
   background-color: aquamarine;
   user-select: none;
   cursor: pointer;
+}
+*:invalid {
+  border-color: red;
+}
+*:valid {
+  border-color: green;
+}
+.not-required {
+  border-color: orange;
 }
